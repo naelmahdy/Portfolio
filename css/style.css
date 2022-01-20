@@ -1,8 +1,16 @@
 *{
   scroll-behavior: smooth;
   text-transform: capitalize;
-
-
+}
+.btnteansition{
+  transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+}
+.usNone{
+  user-select: none;
 }
 .MoveIcon{
   visibility: hidden;
@@ -93,6 +101,10 @@ outline: white 5px solid;
   transition: all .5s ease-in;
   background-color: rgb(255, 193, 7) !important;
   color: black !important;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
 }
 .ServicesHover:hover hr {
   border-color: #000000 !important;
@@ -113,7 +125,6 @@ outline: white 5px solid;
   top: 0;
   left: 0;
   right: 0;
-  
 }
 .shadowChildupdateProjects {
   top: -14px;
@@ -127,8 +138,11 @@ outline: white 5px solid;
 .projectsHoverParent:hover .projectsHover {
   display: block;
   background-color: rgb(0 0 0 / 78%);
-  transition: all .5s ease-in-out;
-
+  transition: all .5s ease-in-out !important;
+  -webkit-transition: all .5s ease-in-out !important;
+  -moz-transition: all .5s ease-in-out !important;
+  -ms-transition: all .5s ease-in-out !important;
+  -o-transition: all .5s ease-in-out !important;
 }
 .btnprojects:hover{
   background-color: white;
