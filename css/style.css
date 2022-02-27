@@ -1,44 +1,40 @@
-*{
+* {
   scroll-behavior: smooth;
   text-transform: capitalize;
 }
-.btnteansition{
-  transition: all .5s ease-in;
-  -webkit-transition: all .5s ease-in;
-  -moz-transition: all .5s ease-in;
-  -ms-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
+
+.btnteansition {
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
-.usNone{
+.usNone {
   user-select: none;
 }
-.MoveIcon{
+.MoveIcon {
   visibility: hidden;
   position: relative;
   left: -56px;
   top: 2px;
 }
-.moveIconParent:hover .MoveIcon{
-  
+.moveIconParent:hover .MoveIcon {
   transform: translate(15px);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   visibility: visible;
-
 }
-
 
 .largeTopMargin {
   margin-top: 100px !important;
   padding-top: 100px !important;
 }
-.HoverLink:hover{
-outline: white 5px solid;
-}
-.nav-item a:hover {
+
+.LinksHover {
   /* transform: scale(1.1);
     transition: all .5s; */
   color: yellow !important;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid yellow !important;
 }
 .bodyColor {
   background-color: #000000;
@@ -64,6 +60,9 @@ outline: white 5px solid;
 }
 .aboutCont {
   z-index: 10;
+}
+.AboutMeText {
+  color: rgb(168, 160, 160);
 }
 .carousel .carousel-indicators li {
   width: 10px !important;
@@ -98,16 +97,19 @@ outline: white 5px solid;
 }
 
 .ServicesHover:hover {
-  transition: all .5s ease-in;
-  background-color: rgb(255, 193, 7) !important;
+  transition: all 0.5s ease-in;
+  background-color: #ffe227 !important;
   color: black !important;
-  -webkit-transition: all .5s ease-in;
-  -moz-transition: all .5s ease-in;
-  -ms-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 .ServicesHover:hover hr {
   border-color: #000000 !important;
+}
+.ServMinHeight {
+  min-height: 205px !important;
 }
 /* -------------------- skills------------------------------- */
 .shadowChildupdateSkills {
@@ -118,13 +120,14 @@ outline: white 5px solid;
 
 /* -------------------Projects -------------------- */
 .projectsHover {
-  display: none;
+  /* display: none; */
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
+  transition: all 0.5s ease-in-out !important;
 }
 .shadowChildupdateProjects {
   top: -14px;
@@ -134,17 +137,18 @@ outline: white 5px solid;
 .projectsHoverParent {
   position: relative;
   height: 250px;
+  transition: all 0.5s ease-in-out !important;
 }
 .projectsHoverParent:hover .projectsHover {
   display: block;
   background-color: rgb(0 0 0 / 78%);
-  transition: all .5s ease-in-out !important;
-  -webkit-transition: all .5s ease-in-out !important;
-  -moz-transition: all .5s ease-in-out !important;
-  -ms-transition: all .5s ease-in-out !important;
-  -o-transition: all .5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  -moz-transition: all 0.5s ease-in-out !important;
+  -ms-transition: all 0.5s ease-in-out !important;
+  -o-transition: all 0.5s ease-in-out !important;
 }
-.btnprojects:hover{
+.btnprojects:hover {
   background-color: white;
   outline: white 2px;
 }
@@ -154,9 +158,11 @@ outline: white 5px solid;
   left: 25%;
   font-size: 110px;
 }
-.blogHeight{
-height: 450px;
-object-fit: cover;
+.blogHeight {
+  height: 450px;
+}
+.blogContHeight{
+  height: 200px;
 }
 /* -----------------------hireMe----------- */
 .hireMe {
@@ -193,70 +199,67 @@ object-fit: cover;
   text-decoration: none;
   color: white;
 }
-.footer a:hover {
-  font-weight: bold;
-  font-size: 17px;
+.footerLink:hover {
   transition: all 0.3s;
-  color: rgb(255, 193, 7);
+  color: rgb(255, 193, 7) !important;
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
-  .carselCont{
+  .carselCont {
     width: 100% !important;
   }
 
   .AboutOverlay {
-
     left: 6px;
     font-size: 80px;
     top: 21px;
-    }
-    .shadowChildupdateProjects {
-      left: -31% !important;
-      font-size: 70px;
-
+  }
+  .shadowChildupdateProjects {
+    left: -31% !important;
+    font-size: 70px;
   }
   .shadowChildupdateBlog {
     left: -27% !important;
     font-size: 65px;
-
   }
   .shadowChildupdateContact {
     left: -28%;
-      font-size: 73px;
-
+    font-size: 73px;
   }
   .shadowChildupdateSkills {
     left: -20% !important;
     font-size: 95px;
-
   }
   .shadowChildupdate {
     left: -16% !important;
     font-size: 64px;
-
   }
   .shadowChildResume {
     left: -3% !important;
     font-size: 70px;
-
   }
-  .CarselBtn{padding: 10px 33px !important;}
-  .CarselBtn2{padding: 10px 7px !important;}
+  .CarselBtn {
+    padding: 10px 33px !important;
+  }
+  .CarselBtn2 {
+    padding: 10px 7px !important;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /*  */
-  .CarselBtn{padding: 10px 33px !important;}
-  .CarselBtn2{padding: 10px 7px !important;}
+  .CarselBtn {
+    padding: 10px 33px !important;
+  }
+  .CarselBtn2 {
+    padding: 10px 7px !important;
+  }
 
   .carselCont {
     width: 100%;
   }
-
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -269,7 +272,6 @@ object-fit: cover;
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  
 }
 @media (max-width: 991.98px) {
   .aboutImg {
@@ -277,24 +279,23 @@ object-fit: cover;
   }
   .AboutMedia {
     margin: auto;
-    
   }
   .aboutParent {
     justify-content: center;
   }
-  .nav-link{
+  .nav-link {
     width: 25%;
     margin: auto;
   }
 }
 @media (max-width: 768px) {
-  .AboutMedia{
+  .AboutMedia {
     width: 85% !important;
   }
-  .Birth{
+  .Birth {
     width: 65% !important;
   }
-  .AboutData{
+  .AboutData {
     flex-direction: column;
   }
   .shadowChildupdateProjects {
@@ -320,20 +321,123 @@ object-fit: cover;
   }
   .caruselContainer2 {
     height: 90vh;
-    background-image: url(../images/n2.png) !important;  
+    background-image: url(../images/n2.png) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-.caruselContainer{
-  height: 90vh;
-  background-image: url(../images/n3.png) !important;  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  .caruselContainer {
+    height: 90vh;
+    background-image: url(../images/n3.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
+@media (min-width: 768px) {
+  .CarselBtn {
+    padding: 8px 48px !important;
+  }
+  .CarselBtn2 {
+    padding: 8px 24px !important;
+  }
 }
-@media (min-width: 768px){
-  .CarselBtn{padding: 8px 48px !important;}
-  .CarselBtn2{padding: 8px 24px !important;}
+/* ------------------------------------------- */
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ---------------------------loading------------------------------ */
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: sk-chase-dot 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2s infinite ease-in-out both;
+}
+
+.sk-chase-dot:nth-child(1) {
+  animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2) {
+  animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4) {
+  animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5) {
+  animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6) {
+  animation-delay: -0.6s;
+}
+.sk-chase-dot:nth-child(1):before {
+  animation-delay: -1.1s;
+}
+.sk-chase-dot:nth-child(2):before {
+  animation-delay: -1s;
+}
+.sk-chase-dot:nth-child(3):before {
+  animation-delay: -0.9s;
+}
+.sk-chase-dot:nth-child(4):before {
+  animation-delay: -0.8s;
+}
+.sk-chase-dot:nth-child(5):before {
+  animation-delay: -0.7s;
+}
+.sk-chase-dot:nth-child(6):before {
+  animation-delay: -0.6s;
+}
+
+@keyframes sk-chase {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot {
+  80%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4);
+  }
+  100%,
+  0% {
+    transform: scale(1);
+  }
 }
