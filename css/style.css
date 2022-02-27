@@ -155,7 +155,7 @@
 /* ------------------------- blog-------------------------- */
 .shadowChildupdateBlog {
   top: -11px;
-  left: 25%;
+  left: 22%;
   font-size: 110px;
 }
 .blogHeight {
@@ -172,11 +172,24 @@
   object-fit: cover;
   background-position: center;
 }
+.hireMeHover{
+  min-height: 80px;
+  font-weight: bolder;
+}
+.hireMeHover:hover{
+  background-color: Rgb(255,226,39) !important;
+  color: #000000;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
 /* ---------------------Contact--------------------------- */
 
 .shadowChildupdateContact {
   top: -11px;
-  left: 21%;
+  left: 22%;
   font-size: 110px;
 }
 .ContactIcon {
@@ -208,6 +221,7 @@
 @media (max-width: 575.98px) {
   .carselCont {
     width: 100% !important;
+    padding-left: 30px;
   }
 
   .AboutOverlay {
@@ -220,15 +234,19 @@
     font-size: 70px;
   }
   .shadowChildupdateBlog {
-    left: -27% !important;
-    font-size: 65px;
+    left: -12px;
+    font-size: 58px;
+    top: 5px;
   }
   .shadowChildupdateContact {
-    left: -28%;
-    font-size: 73px;
-  }
+    left: -19% !important;
+    font-size: 55px;
+    top: 8px;
+}
+
+  
   .shadowChildupdateSkills {
-    left: -20% !important;
+    left: -10% !important;
     font-size: 95px;
   }
   .shadowChildupdate {
@@ -249,6 +267,9 @@
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .shadowChildupdateContact{
+    left: -33px;
+  }
   /*  */
   .CarselBtn {
     padding: 10px 33px !important;
@@ -260,14 +281,34 @@
   .carselCont {
     width: 100%;
   }
+  .shadowChildupdateBlog {
+    left: -49px;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .shadowChildupdateContact{
+    left: 42px;
+  }
+  .shadowChildupdateBlog {
+    left: 25px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .hireMeHover{
+    min-width: 225px;
+    padding: 20px 30px 10px 30px !important;
+    margin: auto;
+    right: 20px;
+    
+  }
+  .shadowChildupdateBlog {
+    left: 78px;
+  }
+ 
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -298,15 +339,9 @@
   .AboutData {
     flex-direction: column;
   }
-  .shadowChildupdateProjects {
-    left: -10%;
-  }
-  .shadowChildupdateBlog {
-    left: -16%;
-  }
-  .shadowChildupdateContact {
-    left: -28%;
-  }
+ 
+
+
   .shadowChildupdateSkills {
     left: 8%;
   }
