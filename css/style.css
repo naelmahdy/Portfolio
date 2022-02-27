@@ -2,7 +2,9 @@
   scroll-behavior: smooth;
   text-transform: capitalize;
 }
-
+body{
+  user-select: none;
+}
 .btnteansition {
   transition: all 0.5s ease-in;
   -webkit-transition: all 0.5s ease-in;
@@ -385,7 +387,7 @@
   color: white;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
