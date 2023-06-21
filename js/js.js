@@ -40,5 +40,5 @@ window.onload = function () {
     nav.style.display = "block";
     loading.style.display = "none";
     document.body.style.overflow = "auto";
-  }, 2500);
+  }, 1000);
 };
